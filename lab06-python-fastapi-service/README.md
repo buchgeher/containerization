@@ -80,3 +80,4 @@ docker compose down
 ```bash
 docker stop telemetry-api && docker rm telemetry-api
 ```
+

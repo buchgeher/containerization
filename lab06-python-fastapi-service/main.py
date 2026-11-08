@@ -39,3 +39,4 @@ def record_telemetry(payload: TelemetryPayload):
         "status": payload.status,
         "recorded_at": datetime.datetime.now(datetime.timezone.utc).isoformat(),
     }
+
