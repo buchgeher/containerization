@@ -10,7 +10,8 @@ COPY main.go .
 
 # CGO_ENABLED=0 produces a statically linked binary (no libc dependency)
 # GOOS=linux targets the container Linux OS
-RUN CGO_ENABLED=0 GOOS=linux go build -ldflags="-s -w" -o server .
+# Compiling main.go directly works without needing a go.mod file
+RUN CGO_ENABLED=0 GOOS=linux go build -ldflags="-s -w" -o server main.go
 
 # ==========================================
 # Stage 2: Minimal production runtime
