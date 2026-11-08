@@ -101,3 +101,4 @@ docker rm -f guestbook-app2
 # Remove the volume (when done with testing)
 docker volume rm guestbook-data
 ```
+

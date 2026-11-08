@@ -9,3 +9,4 @@ EXPOSE 80
 
 # Start server in foreground
 CMD ["nginx", "-g", "daemon off;"]
+

@@ -10,3 +10,4 @@ EXPOSE 8080
 
 # 4. Explicitly drop all root privileges
 USER nginx
+

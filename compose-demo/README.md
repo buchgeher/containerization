@@ -43,3 +43,4 @@ docker compose down
 # Or stop and completely wipe persistent volumes (clean slate):
 docker compose down -v
 ```
+

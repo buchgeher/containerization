@@ -97,3 +97,4 @@ if __name__ == "__main__":
     server = http.server.HTTPServer(("", port), GuestbookHandler)
     print(f"Guestbook server listening on http://0.0.0.0:{port}...")
     server.serve_forever()
+
