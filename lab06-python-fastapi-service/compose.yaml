@@ -1,0 +1,13 @@
+services:
+  telemetry-service:
+    build: .
+    container_name: telemetry-api
+    ports:
+      - "8000:8000"
+    volumes:
+      # Mount host directory for hot-reloading during development
+      - .:/app
+    environment:
+      - ENV=development
+    # Enable uvicorn auto-reload in development
+    command: ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8000", "--reload"]
