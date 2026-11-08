@@ -1,0 +1,11 @@
+# Naive Dockerfile (Runs as root on standard port 80)
+FROM nginx:alpine
+
+# Copy HTML into web server docroot
+COPY index.html /usr/share/nginx/html/index.html
+
+# Document default HTTP port
+EXPOSE 80
+
+# Start server in foreground
+CMD ["nginx", "-g", "daemon off;"]
